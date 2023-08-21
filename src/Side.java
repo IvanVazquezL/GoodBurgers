@@ -21,7 +21,7 @@ public class Side {
         return price;
     }
 
-    private double calculatePrice(Side.SideType name, Side.SideSize size) {
+    public static double calculatePrice(Side.SideType name, Side.SideSize size) {
         return name.getBasePrice() * size.getFactor();
     }
 

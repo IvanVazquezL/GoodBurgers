@@ -25,7 +25,7 @@ public class Drink {
         return price;
     }
 
-    public double calculatePrice(Drink.DrinkType name, Drink.DrinkSize size) {
+    public static double calculatePrice(Drink.DrinkType name, Drink.DrinkSize size) {
         return name.getBasePrice() * size.getFactor();
     }
 
